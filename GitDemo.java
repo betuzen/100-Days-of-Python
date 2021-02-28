@@ -1,8 +1,10 @@
 /*****
- * Edit this line to have your name.
+ * Alberto Ruiz
  ******/
 public class GitDemo {
     
+    /*Edit 2*/
+    private double reverseNum;
     private double previousNumber;
     
     public GitDemo() {
@@ -14,6 +16,8 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
+        /*EDIT 1*/
+        previousNumber = previousNumber + num;
         return 0;
     }
     
@@ -45,7 +49,8 @@ public class GitDemo {
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
-        
+        /*change number 3 */
+        reverseNum = newNumber;
         return newNumber;
     }
     
